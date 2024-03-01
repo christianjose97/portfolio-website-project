@@ -1,0 +1,43 @@
+/* ProjectSection.module.css */
+
+.projectSection {
+    padding: 50px 0;
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .project {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .project h3 {
+    font-size: 20px;
+  }
+  
+  .project p {
+    margin-top: 10px;
+  }
+  
+  .project a {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .project a:hover {
+    background-color: #0056b3;
+  }
+  
