@@ -1,0 +1,62 @@
+/* BookRecommendations.module.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .bookContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .book {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+  
+  .book.active {
+    opacity: 1;
+  }
+  
+  .book img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .book h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .book p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .book a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book a:hover {
+    background-color: #0056b3;
+  }
+  
