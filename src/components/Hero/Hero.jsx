@@ -9,7 +9,9 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.heroContent}>
         <h1>Hi, I'm Chris</h1>
-        <p>I'm a creative backend developer</p>
+        <p>I'm a creative backend developer.
+          Feel free to look around!
+           </p>
         <a href="mailto:myemail@email.com">Contact me</a>
       </div>
       <img src={getImageUrl("hero/heroImage.jpg")} alt="Hero image of me" className={styles.heroImage} />
