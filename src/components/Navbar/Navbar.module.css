@@ -10,6 +10,8 @@
     padding-top: 61px;
     z-index: 2;
     margin: 0 10%;
+    background-color: var(--navbar-bg);
+    transition: background-color 0.5s; /* Add transition for smooth dark mode toggle */
 }
 
 .title {
@@ -17,15 +19,15 @@
     font-weight: 600;
     text-decoration: none;
     color: var(--color-text);
-    flex: 1; /* Allow title to grow and occupy remaining space */
-    text-align: center; /* Center the text */
+    flex: 1;
+    text-align: center;
     margin-bottom: 30px;
 }
 
 .menu {
     display: flex;
     align-items: center;
-    margin-right: auto; /* Push menu items to the right */
+    margin-right: auto;
 }
 
 .menuItems {
@@ -35,7 +37,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: black;
+    background-color: var(--menu-bg);
     border-radius: 5px;
     padding: 10px;
     opacity: 0;
@@ -49,7 +51,7 @@
 
 .menuItems a {
     font-size: 25px;
-    color: white;
+    color: var(--color-text-light);
     text-decoration: none;
 }
 
@@ -63,5 +65,55 @@
 }
 
 .menuBtn.active {
-    background-color: black;
+    background-color: var(--menu-btn-active-bg);
 }
+
+/* Dark mode styles */
+.darkMode {
+    background-color: var(--dark-mode-bg); /* Change background color for dark mode */
+}
+
+.darkModeToggle {
+    position: relative;
+    margin-right: 20px;
+}
+
+.darkModeToggle input {
+    display: none;
+}
+
+.darkModeToggle label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 50px;
+    height: 25px;
+    background-color: var(--color-secondary); /* Toggle button background color */
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.darkModeToggle input:checked + label {
+    background-color: var(--color-primary); /* Change button color when toggled */
+}
+
+.darkModeToggle label:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color-text);
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.darkModeToggle input:checked + label:before {
+    transform: translateX(23px) translateY(-50%); /* Adjust translateX value */
+}
+
+
