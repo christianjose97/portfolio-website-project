@@ -30,7 +30,7 @@ const BookRecommendations = () => {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>My Book Recommendations</h2>
+      <h2 className={styles.title}>My Top Reads</h2>
       <div className={styles.bookContainer}>
         {books.map((book, index) => (
           <div

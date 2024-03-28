@@ -45,3 +45,14 @@
   margin-left: 50px;
   border-radius: 5px;
 }
+
+.typingText {
+  border-right: 2px solid #007bff; /* Vertical blinking cursor */
+  animation: typingAnimation 0.8s steps(20) infinite;
+}
+
+@keyframes typingAnimation {
+  0% { border-right-color: transparent; }
+  50% { border-right-color: transparent; }
+  100% { border-right-color: #007bff; }
+}
