@@ -1,3 +1,3 @@
 # My Portfolio Website
 
-Currently Not finished Loading...
+currently in beta. Dark mode loading
