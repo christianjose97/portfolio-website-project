@@ -14,7 +14,12 @@ const projects = [
     description: 'API that stores read books in a database. Soon to be made a complete app',
     githubLink: 'https://github.com/christianjose97/Book_collection_project',
   },
-  // Add more projects as needed
+  {
+    title: 'Themed Password Generator',
+    description: 'This project aims to make your password creation simpler and more fun',
+    githubLink: 'https://github.com/christianjose97/Book_collection_project',
+  }
+  // Add more projects here following the same format
 ];
 
 const ProjectSection = () => {
